@@ -1,0 +1,143 @@
+@font-face {
+  font-family: myFont;
+  src: url(../fonts/gilgan/Gilgan.otf);
+}
+
+* {
+  box-sizing: border-box;
+  border: 0.1px solid #ECEBE9;
+}
+
+body {
+  background-color: #ECEBE9;
+  font-family: myFont, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  border: none;
+}
+
+a:hover {
+  font-style: oblique;
+  background-color: #D7FF04;
+}
+
+/* Navbar - h1 and ul on same horizontal line*/
+
+nav {
+  height: 10%;
+  margin-bottom: 5%;
+}
+
+nav h1 {
+  float: left;
+  margin: 0 auto;
+  width: 25%;
+  padding: 2.5%;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  margin: auto;
+  padding: 2.5%;
+  width: 75%;
+}
+
+nav ul li {
+  display: inline-block;
+  border-left: 1px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* About me */
+
+#me {
+  text-align: center;
+}
+
+#me img {
+  max-width: 20%;
+  border-radius: 30%;
+  display: block;
+  margin: 5% auto;
+}
+
+#me p {
+  display: block;
+  margin: auto;
+  padding: auto;
+  font-size: 20px;
+}
+
+/* Projects grid */
+
+.projects {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5% 0;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+      "horiseon horiseon biplus"
+      "horiseon horiseon three"
+      "four five six";
+}
+
+#horiseon {
+  grid-area: horiseon;
+  background-image: url(../images/horiseon.jpg);
+}
+
+#biplus {
+  grid-area: biplus;
+  background-image: url(../images/newspaper.png);
+}
+
+#project3 {
+  grid-area: three;
+  background-image: url(../images/workinprogress3.jpg);
+}
+
+#project4 {
+  grid-area: four;
+  background-image: url(../images/workinprogress3.jpg);
+}
+
+#project5 {
+  grid-area: five;
+  background-image: url(../images/workinprogress3.jpg);
+}
+
+#project6 {
+  grid-area: six;
+  background-image: url(../images/workinprogress3.jpg);
+}
+
+main article section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  display: grid;
+  align-content: end;
+}
+
+main article section h2 {
+  background-color: rgba(236, 235, 233, 0.7);
+  padding: 15px;
+  height: 25px;
+  color: black;
+  font-size: 18px;
+  border-bottom: 5px solid #d7FF04;
+}
+
+/* Contacts */
+
+#contacts {
+  margin-left: 5%;
+}
